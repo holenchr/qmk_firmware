@@ -1,3 +1,5 @@
+// ADJUSTED TO SWISS MAC OS KEYBOARD (holenchr 2025-03-04)
+
 /* Copyright 2020
  *
  * This program is free software: you can redistribute it and/or modify
@@ -36,7 +38,7 @@ const uint8_t ascii_to_shift_lut[16] PROGMEM = {
     KCLUT_ENTRY(0, 1, 1, 1, 1, 1, 1, 1),
     KCLUT_ENTRY(1, 1, 1, 1, 1, 1, 1, 1),
     KCLUT_ENTRY(1, 1, 1, 1, 1, 1, 1, 1),
-    KCLUT_ENTRY(1, 1, 1, 0, 0, 0, 0, 1),
+    KCLUT_ENTRY(1, 1, 1, 0, 1, 0, 0, 1),
     KCLUT_ENTRY(1, 0, 0, 0, 0, 0, 0, 0),
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
@@ -49,7 +51,7 @@ const uint8_t ascii_to_altgr_lut[16] PROGMEM = {
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
 
-    KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
+    KCLUT_ENTRY(0, 0, 0, 1, 0, 0, 0, 0),
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
     KCLUT_ENTRY(0, 0, 0, 0, 0, 0, 0, 0),
@@ -102,13 +104,13 @@ const uint8_t ascii_to_keycode_lut[128] PROGMEM = {
     // 8     9        :        ;        <        =        >        ?
     CH_8,    CH_9,    CH_DOT,  CH_COMM, CH_LABK, CH_0,    CH_LABK, CH_QUOT,
     // @     A        B        C        D        E        F        G
-    CH_2,    CH_A,    CH_B,    CH_C,    CH_D,    CH_E,    CH_F,    CH_G,
+    CH_G,    CH_A,    CH_B,    CH_C,    CH_D,    CH_E,    CH_F,    CH_G,
     // H     I        J        K        L        M        N        O
     CH_H,    CH_I,    CH_J,    CH_K,    CH_L,    CH_M,    CH_N,    CH_O,
     // P     Q        R        S        T        U        V        W
     CH_P,    CH_Q,    CH_R,    CH_S,    CH_T,    CH_U,    CH_V,    CH_W,
     // X     Y        Z        [        \        ]        ^        _
-    CH_X,    CH_Y,    CH_Z,    CH_UDIA, CH_LABK, CH_DIAE, CH_CIRC, CH_MINS,
+    CH_X,    CH_Y,    CH_Z,    CH_5,    CH_7,    CH_6,    CH_CIRC, CH_MINS,
     // `     a        b        c        d        e        f        g
     CH_CIRC, CH_A,    CH_B,    CH_C,    CH_D,    CH_E,    CH_F,    CH_G,
     // h     i        j        k        l        m        n        o
@@ -116,5 +118,5 @@ const uint8_t ascii_to_keycode_lut[128] PROGMEM = {
     // p     q        r        s        t        u        v        w
     CH_P,    CH_Q,    CH_R,    CH_S,    CH_T,    CH_U,    CH_V,    CH_W,
     // x     y        z        {        |        }        ~        DEL
-    CH_X,    CH_Y,    CH_Z,    CH_ADIA, CH_7,    CH_DLR,  CH_CIRC, KC_DEL
+    CH_X,    CH_Y,    CH_Z,    CH_8,    CH_7,    CH_9,    CH_N,    KC_DEL
 };

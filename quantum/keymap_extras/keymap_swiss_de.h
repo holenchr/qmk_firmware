@@ -1,3 +1,6 @@
+// ADJUSTED TO SWISS MAC OS KEYBOARD (holenchr 2025-03-04)
+
+
 // Copyright 2025 QMK
 // SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -101,17 +104,17 @@
 #define CH_COLN S(CH_DOT)  // :
 #define CH_UNDS S(CH_MINS) // _
 #define CH_BRKP ALGR(CH_1)    // ¦
-#define CH_AT   ALGR(CH_2)    // @
+#define CH_AT   ALGR(CH_G)    // @
 #define CH_HASH ALGR(CH_3)    // #
 #define CH_NOT  ALGR(CH_6)    // ¬
 #define CH_PIPE ALGR(CH_7)    // |
 #define CH_CENT ALGR(CH_8)    // ¢
 #define CH_ACUT ALGR(CH_QUOT) // ´ (dead)
-#define CH_TILD ALGR(CH_CIRC) // ~ (dead)
+#define CH_TILD ALGR(CH_N) // ~ (dead)
 #define CH_EURO ALGR(CH_E)    // €
-#define CH_LBRC ALGR(CH_UDIA) // [
-#define CH_RBRC ALGR(CH_DIAE) // ]
-#define CH_LCBR ALGR(CH_ADIA) // {
-#define CH_RCBR ALGR(CH_DLR)  // }
-#define CH_BSLS ALGR(CH_LABK) // (backslash)
+#define CH_LBRC ALGR(CH_5) // [
+#define CH_RBRC ALGR(CH_6) // ]
+#define CH_LCBR ALGR(CH_8) // {
+#define CH_RCBR ALGR(CH_9)  // }
+#define CH_BSLS S(ALGR(CH_7)) // (backslash)
 

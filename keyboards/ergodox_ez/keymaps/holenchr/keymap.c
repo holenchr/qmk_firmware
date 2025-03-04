@@ -1,3 +1,5 @@
+// ADJUSTED TO SWISS MAC OS KEYBOARD (holenchr 2025-03-04)
+
 #include QMK_KEYBOARD_H
 #include "version.h"
 #include "sendstring_swiss_de.h"
@@ -8,7 +10,7 @@ enum layers {
 };
 
 enum custom_keycodes {
-	MACRO_BRCT,
+	MACRO_BRCT = SAFE_RANGE,
 	MACRO_CBRC,
 	MACRO_PRNT,
 };
